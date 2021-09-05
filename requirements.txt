@@ -1,12 +1,12 @@
-numpy
+numpy==1.16.0
 scipy
 Pillow
 cython
 matplotlib
-scikit-image
-tensorflow>=1.3.0
-keras>=2.0.8
+scikit-image==0.16.2
+nvidia-tensorflow[horovod]
+keras==2.0.8
 opencv-python
-h5py
+h5py==2.10.0
 imgaug
 IPython[all]
