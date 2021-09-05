@@ -1,16 +1,22 @@
-## Set pip source as tsinghua
-临时使用
+# Personal Settings
+* Set pip source as tsinghua 临时使用
+```
 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
+```
 设为默认
 升级 pip 到最新的版本 (>=10.0.0) 后进行配置：
+```
 pip install pip -U
 pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+```
 如果pip 默认源的网络连接较差，临时使用tsinghua镜像站来升级 pip：
+```
 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple pip -U
-## GPU
-RTX 3070Ti
+```
+* GPU: RTX 3070Ti
 
-## Personal installations
+* installations
+```
 	python 3.6
 modify requirements.txt:
 	numpy==1.16.0
@@ -21,10 +27,12 @@ modify requirements.txt:
 	h5py==2.10
 run pip install -r requirements.txt
 pip install git+https://github.com/philferriere/cocoapi.git#subdirectory=PythonAPI
-## check GPU available
+```
+* check GPU available
+```
 import tensorflow as tf
 print(tf.test.is_gpu_available())
-
+```
 # Mask R-CNN for Object Detection and Segmentation
 
 This is an implementation of [Mask R-CNN](https://arxiv.org/abs/1703.06870) on Python 3, Keras, and TensorFlow. The model generates bounding boxes and segmentation masks for each instance of an object in the image. It's based on Feature Pyramid Network (FPN) and a ResNet101 backbone.
