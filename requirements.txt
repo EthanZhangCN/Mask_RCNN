@@ -4,6 +4,7 @@ Pillow
 cython
 matplotlib
 scikit-image==0.16.2
+nvidia-pyindex
 nvidia-tensorflow[horovod]
 keras==2.0.8
 opencv-python
